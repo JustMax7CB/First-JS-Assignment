@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="simpleStyle.css" />
+    <title>JS Assignement (1-6)</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a href="./index.html">Form JS</a>
+      <a href="./simple.html">Simple JS</a>
+    </nav>
+    <h1>Tasks 1 - 6</h1>
+    <div>
+      <h3>Compare Numbers</h3>
+      <div class="compare-print">
+        <form id="compare_form" method="POST">
+          <label for="compareFirstNum">First Number</label>
+          <input type="number" name="compareFirstNum" id="compareFirstNum" />
+          <label for="compareSecondNum">Second Number</label>
+          <input type="number" name="compareSecondNum" id="compareSecondNum" />
+          <button class="btn-hover color-8" type="button">
+            <span>Compare</span>
+          </button>
+        </form>
+        <div class="compare-result"></div>
+      </div>
+      <h3>Add Two Numbers</h3>
+      <div class="add-print">
+        <form id="add_form" method="POST">
+          <label for="addFirstNum">First Number</label>
+          <input type="number" name="addFirstNum" id="addFirstNum" />
+          <label for="addSecondNum">Second Number</label>
+          <input type="number" name="addSecondNum" id="addSecondNum" />
+          <button class="btn-hover color-8" type="button">
+            <span>Add Numbers</span>
+          </button>
+        </form>
+        <div class="add-result"></div>
+      </div>
+      <h3>Multiply Two Numbers</h3>
+      <div class="mul-print">
+        <form id="mul_form" method="POST">
+          <label for="mulFirstNum">First Number</label>
+          <input type="number" name="mulFirstNum" id="mulFirstNum" />
+          <label for="mulSecondNum">Second Number</label>
+          <input type="number" name="mulSecondNum" id="mulSecondNum" />
+          <button class="btn-hover color-8" type="button">
+            <span>Multiply Numbers</span>
+          </button>
+        </form>
+        <div class="mul-result"></div>
+      </div>
+      <div class="dayMessage">
+        <h3>Day Number Message</h3>
+        <div>
+          <label for="dayNumber">Day Number</label>
+          <select class="custom-select" name="dayNumber" id="dayNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <div class="day-result"></div>
+        </div>
+      </div>
+      <div class="monthNumber">
+        <h3>Month Number Message</h3>
+        <div>
+          <label for="monthNum">Month Number Message</label>
+          <input type="number" name="monthNum" id="monthNum" />
+          <div class="month-result"></div>
+        </div>
+      </div>
+
+      <div class="holiday-div">
+        <h3>Holiday String Message</h3>
+        <div>
+          <label for="holidayName">Holiday Name</label>
+          <select class="custom-select" name="holidayName" id="holidayName">
+            <option value="purim">Purim</option>
+            <option value="passover">Passover</option>
+            <option value="shavoout">Shavoout</option>
+            <option value="suckot">Suckot</option>
+          </select>
+          <div class="holiday-result"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="simple.js"></script>
+  </body>
+</html>

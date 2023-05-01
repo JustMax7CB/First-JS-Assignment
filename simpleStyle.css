@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  padding: 40px 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 3em;
+  justify-content: center;
+}
+
+.navbar a {
+  margin: 0 20px;
+  height: 100%;
+  vertical-align: middle;
+  line-height: 32px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 16px;
+  padding: 0 2em;
+  font-weight: 600;
+  background: #1f2937;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar a:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.navbar a:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+input {
+  padding-left: 10px;
+  background-color: #f5f5f5;
+  color: #242424;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: 0.5px solid black;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+button {
+  width: 9.5em;
+  height: 2em;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c2cccc;
+}
+
+h3 {
+  text-align: center;
+}
+
+.compare-print,
+.add-print,
+.mul-print {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.compare-result,
+.add-result,
+.mul-result,
+.day-result,
+.month-result,
+.holiday-result {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.compare-result::before,
+.add-result::before,
+.mul-result::before,
+.day-result::before,
+.month-result::before,
+.holiday-result::before {
+  content: "Result: ";
+}
+
+.dayMessage div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dayNumber {
+  width: 100px;
+  margin: 10px 15px;
+}
+
+select {
+  background-color: #f5f5f5 !important;
+  color: #000000 !important;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.monthNumber div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#monthNum {
+  margin: 10px 15px;
+}
+
+.holiday-div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holiday-div select {
+  width: 200px;
+}
+
+#holidayName {
+  margin: 10px 15px;
+}
+
+.btn-hover {
+  width: 170px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 20px;
+  height: 55px;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-8 {
+  background-image: linear-gradient(
+    to right,
+    #29323c,
+    #485563,
+    #2b5876,
+    #4e4376
+  );
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="formStyle.css" />
+    <title>Form Javascript Assignment</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a href="./index.html">Form JS</a>
+      <a href="./simple.html">Simple JS</a>
+    </nav>
+    <h1>Javascript Form Assignment</h1>
+    <div class="form-div">
+      <form onsubmit="return formValidation()" method="POST">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your username"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <button class="btn-hover color-8" type="submit">Login</button>
+      </form>
+    </div>
+
+    <script src="formScript.js"></script>
+  </body>
+</html>
